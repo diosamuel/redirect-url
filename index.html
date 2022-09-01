@@ -1,9 +1,12 @@
+<h1>>url={web}?tab={true|false}</h1>
 <script>
 const urlSearchParams = new URLSearchParams(window.location.search);
 const {url,tab} = Object.fromEntries(urlSearchParams.entries());
-if(tab){
-window.open(url)
-}else{
-window.location.href=url
+if(url){
+  if(eval(tab)){
+    window.open(url)
+  }else{
+    window.location.href=url
+  }
 }
 </script>
