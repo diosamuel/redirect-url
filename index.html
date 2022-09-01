@@ -1,0 +1,9 @@
+<script>
+const urlSearchParams = new URLSearchParams(window.location.search);
+const {url,tab} = Object.fromEntries(urlSearchParams.entries());
+if(tab){
+window.open(url)
+}else{
+window.location.href=url
+}
+</script>
