@@ -1,4 +1,13 @@
-<h1>>url={web}?tab={true|false}</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>redirect</title>
+</head>
+<body>
+<h1>url={web}?tab={true|false}</h1>
+  
 <script>
 const urlSearchParams = new URLSearchParams(window.location.search);
 const {url,tab} = Object.fromEntries(urlSearchParams.entries());
@@ -10,3 +19,5 @@ if(url){
   }
 }
 </script>
+</body>
+</html>
