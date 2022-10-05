@@ -1,8 +1,6 @@
 # Redirect Things
 Just simple tool that help you redirecting the web.
 
-This is a tutorial about how to use redirect-url
-
 ## How to use
 Open a new tab on your browser and run this link
 ```
